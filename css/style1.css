@@ -1,0 +1,55 @@
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;             
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; margin: 0; 
+      } 
+.container { 
+            width: 100%; 
+            max-width: 400px; 
+            padding: 20px; 
+            } 
+.verification-card { 
+            background-color: #ffffff; 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);                 
+            text-align: center;
+             } 
+h1 { 
+    font-size: 24px; 
+    font-weight: 600; 
+    color: #1a1a1a; 
+    margin-bottom: 10px; 
+    } 
+.description { 
+                font-size: 16px; 
+                color: #666666;
+                margin-bottom: 30px; 
+                line-height: 1.5; 
+               } 
+ .description strong { 
+                      font-weight: 500; 
+                      color: #333333; 
+                      } 
+ .code-inputs { 
+                display: flex; 
+                justify-content: space-between; 
+                gap: 10px; 
+                margin-bottom: 30px; 
+                } 
+ .code-input { 
+              width: 40px; 
+              height: 50px; 
+              font-size: 24px; 
+              text-align: center; 
+              border: 2px solid #e0e0e0;          
+              border-radius: 8px; 
+              outline: none; 
+              transition: border-color 0.2s ease-in-out; 
+              -moz-appearance: textfield; /* Remove number input arrows in Firefox */ } /* Hide number input arrows for other browsers */ .code-input::-webkit-outer-spin-button, .code-input::-webkit-inner-spin-button { 
+              -webkit-appearance: none;              
+             margin:0; } .code-input:focus, .code-input.active { border-color: #6a1b9a; /* Un violet plus foncé pour le focus */ } .resend-section { font-size: 14px; color: #888888; line-height: 1.5; } 
+
+

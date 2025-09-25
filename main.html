@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+ <html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-mobile3.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+       <script src="js/jquery-3.7.1.min.js">
+    </script>
+    <script src="js/js.js">
+    </script>  
+    <div class="container">   
+      <p class="text0">Total Balance</p>
+      <p class="current-balance">$999.9</p>
+      
+      
+      
+      <div class="graphique">
+        <canvas id="monGraphiqueCirculaire"></canvas>
+    </div>
+    
+
+    <script>
+        // Les données pour le graphique
+        const data = {
+            labels: [
+                'Foods',
+                'Housing',
+                'Transportaion',
+                'Enterainment',
+                'Health',
+                'Other'
+            ],
+            datasets: [{
+                label: 'Mon premier Dataset',
+                _data: [300, 50, 100, 20,50,30], // Les valeurs pour chaque secteur
+                backgroundColor: [
+                    '#f4ffd5', // Couleur du premier secteur
+                    '#1523ff',  // Couleur du deuxième
+                    '#00ff03',  // Couleur du troisième
+                    '#fff155',  // Couleur du quatrième  
+                    '#80d6ff',
+                    '#af15ff'
+                ],
+                
+                
+            }]
+        };
+
+        // La configuration du graphique
+        const config = {
+            type: 'doughnut', // Type du graphique (ici en anneaux)
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                       
+                        
+                                                                    },
+                    title: {
+                        display: false
+            
+                    }
+                }
+            }
+        };
+
+        // Création de l'instance du graphique
+        const monGraphiqueCirculaire = new Chart(
+            document.getElementById('monGraphiqueCirculaire'),
+            config
+        );
+    </script>
+      <div class="container1">
+      <div class="grid">
+  <p class="text1">Recent Transactions</p>
+ <div class="re">
+    <table> 
+        <tr> 
+            <td>xxxx-xx-xx</td> 
+            <td>cause</td> 
+            <td>99</td> 
+         </tr> 
+         <tr class="ligne"> 
+             <td>xxxx-xx-xx</td> 
+             <td>Pierre</td> 
+             <td>28</td> 
+         </tr> 
+         <tr class="ligne"> 
+             <td>xxxx-xx-xx</td> 
+             <td>Pauline</td> 
+             <td>99</td> 
+          </tr> 
+          <tr class="ligne"> 
+             <td>xxxx-xx-xx</td> 
+             <td>Pauline</td> 
+             <td>99</td> 
+          </tr> 
+          <tr class="ligne"> 
+             <td>xxxx-xx-xx</td> 
+             <td>Pauline</td> 
+             <td>99</td> 
+          </tr> 
+      </table>
+ </div>
+      </div>
+      </div>
+      
+      
+      <div class="container2">
+      <button class="btn-add-depense"> 
+       <div class="iadd">+</div> Add New Transaction                
+      </button>
+      </div>
+      
+         
+     </div>
+     <div class="add-transaction">
+         <div class="contenair-trans0">
+		 <select class="add-categorie1">
+			<option>Foods</option>
+			<option>Housing</option>
+			<option>Transportaion</option>
+			<option>Enterainment</option>
+			<option>Health</option>
+			<option>Other</option>
+		 </select>
+		   <input type="text" class="description-add" placeholder="description">
+		   <button type="send" class="addtransact">add transaction</button>
+		 </div>
+     </div>
+     
+  </body>
+  </html>
+

@@ -1,0 +1,206 @@
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;             
+      background-color: #efefef;
+      height: 100vh; 
+      margin: 0; 
+      width:100%;
+      max-height :90vh;                  } 
+.container{
+    position: relative;
+    height : 150px;
+  
+}
+.text0,.current-balance{
+    text-align: center;
+}
+.text0{
+    font-size : 1.5em;
+}
+.current-balance{
+    margin-left: 23%;
+	margin-right: 23%;
+    font-size: 3em;
+    margin-top :0px;
+    border-radius :30px;
+    background :#5b15fff9;    
+    color: #f0f2f5;
+    width: 50%;
+    padding-right :5px;
+    padding-left : 5px;
+    margin-bottom : 5px;
+    height: 60px;
+}
+.container2{
+  width: 100%;
+  display :flex ;
+  justify-content: center;
+  perspective: preserve-3d;
+  margin-top: 10px;
+}
+.btn-add-depense:active{
+    outline: 0px;
+}
+.container2:active{
+    outline: 0px;
+}
+.btn-add-depense{
+    position:relative;
+    display: flex;
+    align-items: center; 
+    background-color: #5b15fff9; 
+    color: white; 
+    border: none; 
+    padding: 3px 30px; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    font-family: sans-serif;
+    width: 250px;
+    height: 6vh;   
+    padding-left: 15%; 
+    trasition: transform 1s ease;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.iadd{
+    position:absolute;
+    background-color: white; 
+    color: #5b15fff9; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 10px; 
+    font-weight: bold; 
+    font-size: 18px;
+    left: 0px;
+    border: 5px solid #5b15fff9;
+    trasition: transform 1s ease;
+    font-size : 2.5em;    }
+.iadd:active{
+    transform: scale(0.50);
+}
+.btn-add-depense:active{
+    transform: scale(0.95);
+}
+.graphique{
+    width: 230px; 
+    height: 200px; 
+    margin: 5px auto;
+}
+.container1{
+  width: 100%;
+  height: 250px;
+  display :flex ;
+  justify-content: center;
+  align-items :center;
+    perspective: preserve-3d;
+  margin-top : 0px;
+  flex-direction : column;
+}
+.grid{
+  max-width: 80%;
+  max-height: 250px;
+  width: 80%;
+  height: 250px;
+  display :flex ;  
+  align-items: center;
+  align-content: center ;
+  flex-direction : column;  
+    perspective: preserve-3d;
+  padding-top :2px;
+}
+.text1{
+     margin-right: 50%;
+     margin-top : 2px;
+    display: block;
+    font-weight : bolder;
+}
+.re{
+    margin-right: 50%;
+    text-align :left;
+    display:center;
+    justify-content :center ;
+    align-items :center ; 
+}
+table{
+  max-width: 300px;
+  max-height: 270px;
+  width: 200%;
+  height: 200px;
+}
+table{
+    border-collapse:collapse ;
+    font-weight: bolder;
+}
+tr td{
+    border-bottom: 2px solid #9a9a8dc2;
+    border-collapse: collapse;
+    gap: 0px;
+    cellpadding: 1px;
+}
+
+.text3{
+    margin-top: 0px;
+}
+.addb{
+    border-radius : 10px;
+    max-width:300px;
+    width: 250px;
+    height: 35px;
+    outline: 0px;
+}
+.addb1{
+       border: 1px solid #b6b6b6ee;
+    background : rgba(1,1,1,0.1);
+}
+.addb2{
+    border: none;
+    color:#ffffff;
+    background:#5b15fff9;
+    transition: transform 0.3s linear;
+}
+.addb2:active{
+    transform: scale(0.95);
+}
+.add-categorie{
+    position: absolute;
+    width: 90%;
+    height : 700px;
+    background : #fff;
+    top: 2%;
+    left: 5%;
+    border-radius :10px;
+    padding: 0px;
+}
+.add-transaction{
+    position: absolute;
+    visibility :hidden;
+    transform :scale(0);
+     height: 250px;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    background: #fff;
+    box-shadow :2px 2px 2px 2px #929286c2;
+    border-radius : 20px;
+    display: flex;
+}
+.contenair-trans0{
+	height:100%;
+	width:100%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;
+	gap: 50px;
+}
+select,.description-add,.addtransact{
+	width: 90%;
+	height: 15%;
+	border-radius: 10px;
+}
+select,.description-add{
+	border: 1px solid rgba(0,0,0,0.4)
+}
